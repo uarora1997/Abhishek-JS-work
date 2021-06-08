@@ -42,7 +42,7 @@ document.querySelector("#r2").innerHTML=b;
 document.querySelector("#r3").innerHTML=c;
 document.querySelector("#r4").innerHTML=p;
 
-
+// FOR INPUT FIELD
 document.querySelector(".top").addEventListener("click", function () {
   document.querySelector(".ifield").style.display = "block";
 });
