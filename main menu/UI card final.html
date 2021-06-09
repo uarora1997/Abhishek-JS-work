@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.13.0/Sortable.min.js" integrity="sha512-5x7t0fTAVo9dpfbp3WtE2N6bfipUwk7siViWncdDoSz2KwOqVC1N9fDxEOzk0vTThOua/mglfF8NO7uVDLRC8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>UI CARD FINAL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    
+    <div class="container-fluid  ps-5 my-4 ">
+        <div class="row">
+
+            <div class="col-12 col-md-6 col-lg-6 col-xl-6 col-sm-6  pt-3">
+                <div>
+                    <p class="ps-5" id="mt">MEETING TYPES</p>
+                    <p class="ps-5 text-muted" id="mt">Meeting types help you customize avalibility hours, time zone,
+                        duration and more of your meetings.
+                </div>
+
+            </div>
+            <div class=" col-12 col-md-6 col-lg-6 col-xl-6 col-sm-6 pb-3">
+                <div class="text-right pb-5 pb-xl-4 pb-xs-4 ">
+                    <a href="#" id="createmeet" class="button_class">Create Meeting Type</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<ul class="happy">
+    <li>
+    <div class="col-sm-6 col-md-4 mx-auto col-xs-12">
+        <div id="cardmain" class="card col-auto mx-auto mt-2">
+            <div class="card-group ">
+                <div class="card-body  ">
+
+
+               
+
+                    <div class="row  ">
+                        <p class="card-text col-7 " id="card1"><strong><a href="#" class="text-dark"
+                                    data-toggle="tooltip" data-placement="bottom" title="Edit"
+                                    style="text-decoration: none;">30 mins Consultation</a></strong< /p>
+
+                                <div class="dropdown  col-5 my-3">
+                                    <button class="btn dropdown-toggle " id="DD" type="button" data-toggle="dropdown">
+                                        <img src="settings.svg" id="svg1" width="16" height="16" class="img-fluid"></a>
+                                    </button>
+                                    <ul class="dropdown-menu ">
+                                        <li><a href="#" class="col "><img id="edit" src="edit.svg" width="16"
+                                                    height="16" class="img-fluid"> Edit</a></li>
+                                        <li><a href="#" class="col"><img id="edit" src="clone.svg" width="16"
+                                                    height="16" class="img-fluid "> Clone</a></li>
+                                        <li><a href="#" class="col"><img id="edit" src="delete.svg" width="16"
+                                                    height="16" class="img-fluid "> Delete</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#" class="col"><img id="edit" src="ATW.svg" width="16" height="16"
+                                                    class="img-fluid"> Add to Website</a></li>
+                                    </ul>
+                                </div>
+                                <span class="card-text text-muted " id="hd1"><strong><br>15 mins , 1:1
+                                        meet</strong></span>
+                                <span class="card-text text-muted " id="hd2"><strong><br>Paid - 50$</strong></span>
+                    </div>
+
+
+                    <div class="row-cols-7 pb-4">
+                        <div class="text-right">
+                            <a href="#" id="VBP">View Booking Page</a>
+                        </div>
+                    </div>
+                    <div class="row pb-3 ">
+                        <div class="col-8 ">
+                            <a href="#" id="CL"><img src="copy.svg" class="img-fluid mx-1">Copylink</a>
+                        </div>
+                        <div class="col-4 text-center" id="swtch1">
+                            <label class="toggle">
+                                <span class="onoff" id="stats">OFF</span>
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div></li><li>
+
+    <div class="col-sm-6 col-md-4 mx-auto col-xs-12">
+        <div id="cardmain" class="card col-auto mx-auto mt-2">
+            <div class="card-group ">
+                <div class="card-body  ">
+
+
+
+
+                    <div class="row  ">
+                        <p class="card-text col-7 " id="card1"><strong><a href="#" class="text-dark"
+                                    data-toggle="tooltip" data-placement="bottom" title="Edit"
+                                    style="text-decoration: none;">30 mins Consultation</a></strong< /p>
+
+                                <div class="dropdown  col-5 my-3">
+                                    <button class="btn dropdown-toggle " id="DD" type="button" data-toggle="dropdown">
+                                        <img src="settings.svg" id="svg1" width="16" height="16" class="img-fluid"></a>
+                                    </button>
+                                    <ul class="dropdown-menu ">
+                                        <li><a href="#" class="col "><img id="edit" src="edit.svg" width="16"
+                                                    height="16" class="img-fluid"> Edit</a></li>
+                                        <li><a href="#" class="col"><img id="edit" src="clone.svg" width="16"
+                                                    height="16" class="img-fluid "> Clone</a></li>
+                                        <li><a href="#" class="col"><img id="edit" src="delete.svg" width="16"
+                                                    height="16" class="img-fluid "> Delete</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#" class="col"><img id="edit" src="ATW.svg" width="16" height="16"
+                                                    class="img-fluid"> Add to Website</a></li>
+                                    </ul>
+                                </div>
+                                <span class="card-text text-muted " id="hd1"><strong><br>15 mins , 1:1
+                                        meet</strong></span>
+                                <span class="card-text text-muted " id="hd2"><strong><br>Paid - 50$</strong></span>
+                    </div>
+
+
+                    <div class="row-cols-7 pb-4">
+                        <div class="text-right">
+                            <a href="#" id="VBP">View Booking Page</a>
+                        </div>
+                    </div>
+                    <div class="row pb-3 ">
+                        <div class="col-8 ">
+                            <a href="#" id="CL"><img src="copy.svg" class="img-fluid mx-1">Copylink</a>
+                        </div>
+                        <div class="col-4 text-center" id="swtch1">
+                            <label class="toggle">
+                                <span class="onoff" id="stats">OFF</span>
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div></li><li>
+    <div class="col-sm-6 col-md-4 mx-auto col-xs-12">
+        <div id="cardmain" class="card col-auto mx-auto mt-2">
+            <div class="card-group ">
+                <div class="card-body  ">
+
+
+
+
+                    <div class="row  ">
+                        <p class="card-text col-7 " id="card1"><strong><a href="#" class="text-dark"
+                                    data-toggle="tooltip" data-placement="bottom" title="Edit"
+                                    style="text-decoration: none;">30 mins Consultation</a></strong</p>
+
+                                <div class="dropdown  col-5 my-3">
+                                    <button class="btn dropdown-toggle " id="DD" type="button" data-toggle="dropdown">
+                                        <img src="settings.svg" id="svg1" width="16" height="16" class="img-fluid"></a>
+                                    </button>
+                                    <ul class="dropdown-menu ">
+                                        <li><a href="#" class="col "><img id="edit" src="edit.svg" width="16"
+                                                    height="16" class="img-fluid"> Edit</a></li>
+                                        <li><a href="#" class="col"><img id="edit" src="clone.svg" width="16"
+                                                    height="16" class="img-fluid "> Clone</a></li>
+                                        <li><a href="#" class="col"><img id="edit" src="delete.svg" width="16"
+                                                    height="16" class="img-fluid "> Delete</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#" class="col"><img id="edit" src="ATW.svg" width="16" height="16"
+                                                    class="img-fluid"> Add to Website</a></li>
+                                    </ul>
+                                </div>
+                                <span class="card-text text-muted " id="hd1"><strong><br>15 mins , 1:1
+                                        meet</strong></span>
+                                <span class="card-text text-muted " id="hd2"><strong><br>Paid - 50$</strong></span>
+                    </div>
+
+
+                    <div class="row-cols-7 pb-4">
+                        <div class="text-right">
+                            <a href="#" id="VBP">View Booking Page</a>
+                        </div>
+                    </div>
+                    <div class="row pb-3 ">
+                        <div class="col-8 ">
+                            <a href="#" id="CL"><img src="copy.svg" class="img-fluid mx-1">Copylink</a>
+                        </div>
+                        <div class="col-4 text-center" id="swtch1">
+                            <label class="toggle">
+                                <span class="onoff" id="stats">OFF</span>
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div></li><li>
+    <div class="col-sm-6 col-md-4 mx-auto col-xs-12 my-4">
+        <div id="cardmain" class="card col-auto mx-auto mt-2">
+            <div class="card-group ">
+                <div class="card-body  ">
+
+
+
+
+                    <div class="row ">
+                        <p class="card-text col-7 " id="card1"><strong><a href="#" class="text-dark"
+                                    data-toggle="tooltip" data-placement="bottom" title="Edit"
+                                    style="text-decoration: none;">30 mins Consultation</a></strong< /p>
+
+                                <div class="dropdown  col-5 my-3">
+                                    <button class="btn dropdown-toggle " id="DD" type="button" data-toggle="dropdown">
+                                        <img src="settings.svg" id="svg1" width="16" height="16" class="img-fluid"></a>
+                                    </button>
+                                    <ul class="dropdown-menu ">
+                                        <li><a href="#" class="col "><img id="edit" src="edit.svg" width="16"
+                                                    height="16" class="img-fluid"> Edit</a></li>
+                                        <li><a href="#" class="col"><img id="edit" src="clone.svg" width="16"
+                                                    height="16" class="img-fluid "> Clone</a></li>
+                                        <li><a href="#" class="col"><img id="edit" src="delete.svg" width="16"
+                                                    height="16" class="img-fluid "> Delete</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#" class="col"><img id="edit" src="ATW.svg" width="16" height="16"
+                                                    class="img-fluid"> Add to Website</a></li>
+                                    </ul>
+                                </div>
+                                <span class="card-text text-muted " id="hd1"><strong><br>15 mins , 1:1
+                                        meet</strong></span>
+                                <span class="card-text text-muted " id="hd2"><strong><br>Paid - 50$</strong></span>
+                    </div>
+
+
+                    <div class="row-cols-7 pb-4">
+                        <div class="text-right">
+                            <a href="#" id="VBP">View Booking Page</a>
+                        </div>
+                    </div>
+                    <div class="row pb-3 ">
+                        <div class="col-8 ">
+                            <a href="#" id="CL"><img src="copy.svg" class="img-fluid mx-1">Copylink</a>
+                        </div>
+                        <div class="col-4 text-center" id="swtch1">
+                            <label class="toggle">
+                                <span class="onoff" id="stats">OFF</span>
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div></li><li>
+    <div class="col-sm-6 col-md-4 mx-auto col-xs-12 my-4">
+        <div id="cardmain" class="card col-auto mx-auto mt-2">
+            <div class="card-group ">
+                <div class="card-body  ">
+
+
+
+
+                    <div class="row  ">
+                        <p class="card-text col-7 " id="card1"><strong><a href="#" class="text-dark"
+                                    data-toggle="tooltip" data-placement="bottom" title="Edit"
+                                    style="text-decoration: none;">30 mins Consultation</a></strong< /p>
+
+                                <div class="dropdown  col-5 my-3">
+                                    <button class="btn dropdown-toggle " id="DD" type="button" data-toggle="dropdown">
+                                        <img src="settings.svg" id="svg1" width="16" height="16" class="img-fluid"></a>
+                                    </button>
+                                    <ul class="dropdown-menu ">
+                                        <li><a href="#" class="col "><img id="edit" src="edit.svg" width="16"
+                                                    height="16" class="img-fluid"> Edit</a></li>
+                                        <li><a href="#" class="col"><img id="edit" src="clone.svg" width="16"
+                                                    height="16" class="img-fluid "> Clone</a></li>
+                                        <li><a href="#" class="col"><img id="edit" src="delete.svg" width="16"
+                                                    height="16" class="img-fluid "> Delete</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#" class="col"><img id="edit" src="ATW.svg" width="16" height="16"
+                                                    class="img-fluid"> Add to Website</a></li>
+                                    </ul>
+                                </div>
+                                <span class="card-text text-muted " id="hd1"><strong><br>15 mins , 1:1
+                                        meet</strong></span>
+                                <span class="card-text text-muted " id="hd2"><strong><br>Paid - 50$</strong></span>
+                    </div>
+
+
+                    <div class="row-cols-7 pb-4">
+                        <div class="text-right">
+                            <a href="#" id="VBP">View Booking Page</a>
+                        </div>
+                    </div>
+                    <div class="row pb-3 ">
+                        <div class="col-8 ">
+                            <a href="#" id="CL"><img src="copy.svg" class="img-fluid mx-1">Copylink</a>
+                        </div>
+                        <div class="col-4 text-center" id="swtch1">
+                            <label class="toggle">
+                                <span class="onoff" id="stats">OFF</span>
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div></li><li>
+    <div class="col-sm-6 col-md-4 mx-auto col-xs-12 my-4">
+        <div id="cardmain" class="card col-auto mx-auto mt-2">
+            <div class="card-group ">
+                <div class="card-body ">
+
+
+
+
+                    <div class="row ">
+                        <p class="card-text col-7 " id="card1"><strong><a href="#" class="text-dark"
+                                    data-toggle="tooltip" data-placement="bottom" title="Edit"
+                                    style="text-decoration: none;">30 mins Consultation</a></strong< /p>
+
+                                <div class="dropdown  col-5 my-3">
+                                    <button class="btn dropdown-toggle " id="DD" type="button" data-toggle="dropdown">
+                                        <img src="settings.svg" id="svg1" width="16" height="16" class="img-fluid"></a>
+                                    </button>
+                                    <ul class="dropdown-menu ">
+                                        <li><a href="#" class="col "><img id="edit" src="edit.svg" width="16"
+                                                    height="16" class="img-fluid"> Edit</a></li>
+                                        <li><a href="#" class="col"><img id="edit" src="clone.svg" width="16"
+                                                    height="16" class="img-fluid "> Clone</a></li>
+                                        <li><a href="#" class="col"><img id="edit" src="delete.svg" width="16"
+                                                    height="16" class="img-fluid "> Delete</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#" class="col"><img id="edit" src="ATW.svg" width="16" height="16"
+                                                    class="img-fluid"> Add to Website</a></li>
+                                    </ul>
+                                </div>
+                                <span class="card-text text-muted " id="hd1"><strong><br>15 mins , 1:1
+                                        meet</strong></span>
+                                <span class="card-text text-muted " id="hd2"><strong><br>Paid - 50$</strong></span>
+                    </div>
+
+
+                    <div class="row-cols-7 pb-4">
+                        <div class="text-right">
+                            <a href="#" id="VBP">View Booking Page</a>
+                        </div>
+                    </div>
+                    <div class="row pb-3 ">
+                        <div class="col-8 ">
+                            <a href="#" id="CL"><img src="copy.svg" class="img-fluid mx-1">Copylink</a>
+                        </div>
+                        <div class="col-4 text-center" id="swtch1">
+                            <label class="toggle">
+                                <span class="onoff " id="stats">OFF</span>
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div></li>
+</ul>
+
+
+</body>
+<script src="main.js"></script>
+
+</html>
