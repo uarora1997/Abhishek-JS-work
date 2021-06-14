@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<title>Integration tab 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+
+<body>
+  <form id="regForm" action="/action_page.php">
+
+    <section>
+      <div class="tabs tabs-style-line">
+        <nav>
+          <ul class="ul-row">
+            <li class="tab-current col-sm-4"><a href="#section-line-1"><img src="basic home.svg"
+                  style="height: 30px; width: 30px; padding-right: 12px;"><span>Calendar</span></a></li>
+            <li class="col-sm-4"><a href="dummy tab 2.html"><img src="appointment.svg"
+                  style="height: 30px; width: 30px; padding-right: 12px;"><span>Meetings and Payments</span></a></li>
+            <li class="col-sm-4"><a href="dummy tab 3.html"><img src="form.svg"
+                  style="height: 30px; width: 30px; padding-right: 8px;"><span>Others</span></a></li>
+          </ul>
+        </nav>
+
+      </div><!-- /tabs -->
+    </section>
+    <div style="padding-top:40px">
+      <div class="text-body" style="font-size: 26px; font-weight: 600;"> Select Calendar </div>
+      <p style="font-size: 18px;" class="text-muted"> Connect your Calendar to Probooking know when you are available
+        and update your Calendar as events are scheduled.</p>
+    </div>
+    <div class="container-2" style="padding-top: 40px;">
+      <div class="container-2-box-1 ff">
+        <p class="text-center">
+          <img src="google.svg" style=" width:45px; height: 45px;">
+        <p style="font-size: 18px; padding-left: 5px;" class="text-center box-text-color">Add Google <span
+            class="box-span-color">Calendar</span></p>
+        </p>
+      </div>
+      <div class="container-2-box-1 ff">
+        <p class="text-center">
+          <img src="outlook.svg" style=" width:45px; height:45px;">
+        <p style="font-size: 18px; padding-left: 5px;" class="text-center box-text-color">Add Office 365 <span
+            class="box-span-color">Calendar</span></p>
+        </p>
+      </div>
+      <div class="container-2-box-1 ff" id="container-light">
+        <p class="text-center">
+          <img src="apple.svg" style=" width:45px; height: 45px;">
+        <p style="font-size: 18px; padding-left: 5px;" class="text-center box-text-color-light">Add Apple <span
+            class="box-span-color">Calendar</span></p>
+        </p>
+      </div>
+    </div>
+    <div style="padding-top: 50px;">
+      <p class="connected-acc" style="color: black; font-size: 20px; font-weight: 600;">Connected Accounts</p>
+      <div style="padding-top: 15px;">
+        <div class="container-1" style="margin:10px">
+          <div class="box-1">
+            <img style=" width:25px; height: 25px; position: relative; bottom:3px " src="google.svg">
+            uditarora.ubs@gmail.com
+          </div>
+          <div class="box-2" id="f1">
+            <img class="FB" src="settings.svg"
+              style="width:20px; height: 20px; padding-right:5px; position: relative; bottom:2px;">Settings
+          </div>
+          <div class="box-3">
+            <p style="cursor: pointer;">Disconnect</p>
+          </div>
+        </div>
+
+        <div class="container-1" style="margin:10px">
+          <div class="box-1">
+            <img style=" width:25px; height: 25px; position: relative; bottom:3px " src="google.svg">
+            uditarora.ubs@gmail.com
+          </div>
+          <div class="box-2" id="f1">
+            <img class="FB" src="settings.svg"
+              style="width:20px; height: 20px; padding-right:5px; position: relative; bottom:2px; ">Settings
+          </div>
+          <div class="box-3">
+            <p style="cursor: pointer;">Disconnect</p>
+          </div>
+        </div>
+
+        <div class="container-1" style="margin:10px">
+          <div class="box-1">
+            <img style=" width:25px; height: 25px; position: relative; bottom:3px " src="google.svg">
+            uditarora.ubs@gmail.com
+          </div>
+          <div class="box-2" id="f1">
+            <img class="FB" src="settings.svg"
+              style="width:20px; height: 20px; padding-right:5px; position: relative; bottom:2px;">Settings
+          </div>
+          <div class="box-3">
+            <p style="cursor: pointer;">Disconnect</p>
+          </div>
+        </div>
+
+        <div class="container-1" style="margin:10px">
+          <div class="box-1">
+            <img style=" width:25px; height: 25px; position: relative; bottom:3px " src="google.svg">
+            uditarora.ubs@gmail.com
+          </div>
+          <div class="box-2" id="f1">
+            <a><img class="FB" src="settings.svg"
+                style=" width:20px; height: 20px; padding-right:5px; position: relative; bottom:2px;">Settings</a>
+          </div>
+          <div class="box-3">
+            <p style="cursor: pointer;">Disconnect</p>
+          </div>
+        </div>
+
+        <div class="google-calendars" id="popup">
+          <div class="content">
+            <h1 class="heading1 p-0 text-danger">Google Calendars</h1>
+            <p class="para text-muted" style="font-size: 18px; padding-left: 5px;">Select calanders you want to use for
+              blocking slots</p>
+            <div class="check-div">
+              <div class="check d-flex justify-content-space-between align-items-center">
+                <h4 class="heading4">Birthdays</h4>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  </div>
+                </div>
+              </div>
+              <div class="check d-flex justify-content-space-between align-items-center">
+                <h4 class="heading4">Holiday in india</h4>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  </div>
+                </div>
+              </div>
+              <div class="check d-flex justify-content-space-between align-items-center">
+                <h4 class="heading4">ProBooking Events</h4>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  </div>
+                </div>
+              </div>
+              <div class="check d-flex justify-content-space-between align-items-center">
+                <h4 class="heading4">ProBooking Events</h4>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="update-btn text-center">
+              <button class="btn btn-danger" id="update-btn">Update</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </form>
+
+  <script>
+    const setting = document.getElementById("f1");
+    const updateBtn = document.getElementById("update-btn");
+    setting.addEventListener("click", () => {
+      const popUp = document.getElementById("popup");
+      popUp.style.display = "block";
+    });
+    updateBtn.addEventListener("click", () => {
+      const popUp = document.getElementById("popup");
+      popUp.style.display = "none";
+    });
+  </script>
+
+</body>
+
+</html>
